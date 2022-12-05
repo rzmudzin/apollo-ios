@@ -1,4 +1,4 @@
-// swift-tools-version:5.3
+// swift-tools-version:5.5
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
@@ -36,9 +36,7 @@ let package = Package(
       targets: ["ApolloWebSocket"]),
   ],
   dependencies: [
-    .package(
-      url: "https://github.com/rzmudzin/SQLite.swift.git",
-      .upToNextMinor(from: "0.13.1"))
+    .package(url: "https://github.com/rzmudzin/SQLite.swift.git", branch: "marriott"),
   ],
   targets: [
     .target(
