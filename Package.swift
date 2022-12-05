@@ -36,9 +36,7 @@ let package = Package(
       targets: ["ApolloWebSocket"]),
   ],
   dependencies: [
-    .package(
-      url: "https://github.com/rzmudzin/SQLite.swift.git",
-      .upToNextMinor(branch: "marriott"))
+    .package(url: "https://github.com/rzmudzin/SQLite.swift.git", branch: "marriott")
   ],
   targets: [
     .target(
